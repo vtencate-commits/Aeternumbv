@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacyverklaring — Aeternum B.V.</title>
+  <meta name="description" content="Privacyverklaring van Aeternum B.V.">
+  <link rel="canonical" href="https://aeternumbv.nl/privacy">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --ink: #0a0a0a;
+      --ink-light: #3a3a3a;
+      --ink-muted: #8a8a8a;
+      --surface: #fafaf8;
+      --surface-warm: #f4f3f0;
+      --rule: #e0ddd8;
+    }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      background: var(--surface);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 2rem; width: 100%; }
+    header { padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--rule); }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .logo span {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 0.875rem;
+      color: var(--ink-muted);
+      margin-left: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .back { font-size: 0.875rem; color: var(--ink-muted); text-decoration: none; transition: color 0.2s ease; }
+    .back:hover { color: var(--ink); }
+    main { flex: 1; padding: 3.5rem 0 5rem; }
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.25rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+      animation: fadeUp 0.8s ease-out both;
+    }
+    .last-updated { font-size: 0.875rem; color: var(--ink-muted); margin-bottom: 3rem; animation: fadeUp 0.8s ease-out 0.1s both; }
+    .section { margin-bottom: 2.5rem; animation: fadeUp 0.8s ease-out 0.2s both; }
+    h2 { font-family: 'DM Sans', sans-serif; font-size: 1.0625rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--ink); }
+    p, li { font-size: 0.9375rem; font-weight: 300; line-height: 1.75; color: var(--ink-light); margin-bottom: 0.5rem; }
+    ul { list-style: none; padding-left: 0; margin-bottom: 0.75rem; }
+    li::before { content: '\2014'; color: var(--ink-muted); margin-right: 0.5rem; }
+    a { color: var(--ink); }
+    .separator { width: 100%; height: 1px; background: var(--rule); margin: 2.5rem 0; }
+    footer { border-top: 1px solid var(--rule); padding: 1.5rem 0; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; }
+    .footer-inner span, .footer-inner a { font-size: 0.8125rem; color: var(--ink-muted); text-decoration: none; }
+    .footer-inner a:hover { color: var(--ink); }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @media (max-width: 640px) { .container { padding: 0 1.25rem; } h1 { font-size: 1.75rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo">Aeternum<span>B.V.</span></a>
+        <a href="/" class="back">&larr; Terug</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Privacyverklaring</h1>
+      <p class="last-updated">Laatst bijgewerkt: maart 2026</p>
+      <div class="section">
+        <h2>1. Verantwoordelijke</h2>
+        <p>Aeternum B.V., gevestigd te Breda, is verantwoordelijk voor de verwerking van persoonsgegevens zoals beschreven in deze privacyverklaring. Aeternum B.V. is ingeschreven bij de Kamer van Koophandel.</p>
+      </div>
+      <div class="section">
+        <h2>2. Welke gegevens verwerken wij</h2>
+        <p>Aeternum B.V. ontwikkelt digitale producten en tools. In dat kader kunnen de volgende persoonsgegevens worden verwerkt:</p>
+        <ul>
+          <li>Naam en contactgegevens</li>
+          <li>LinkedIn profielgegevens (bij gebruik van onze tools via LinkedIn OAuth)</li>
+          <li>Door u aangeleverde content en teksten</li>
+          <li>Gebruiksgegevens en technische logbestanden</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>3. Doeleinden</h2>
+        <p>Wij verwerken persoonsgegevens voor de volgende doeleinden:</p>
+        <ul>
+          <li>Het leveren van onze diensten en digitale producten</li>
+          <li>Het authenticeren van gebruikers via LinkedIn</li>
+          <li>Het publiceren van content op LinkedIn namens en met toestemming van de gebruiker</li>
+          <li>Het analyseren van contentprestaties</li>
+          <li>Het verbeteren van onze producten</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>4. Rechtsgrondslag</h2>
+        <p>De verwerking is gebaseerd op uw toestemming (artikel 6 lid 1 sub a AVG) bij het gebruik van LinkedIn OAuth, en op de uitvoering van een overeenkomst (artikel 6 lid 1 sub b AVG) bij het gebruik van onze diensten.</p>
+      </div>
+      <div class="section">
+        <h2>5. Delen met derden</h2>
+        <p>Wij delen persoonsgegevens uitsluitend met derden voor zover noodzakelijk voor onze dienstverlening:</p>
+        <ul>
+          <li>LinkedIn Corporation (voor authenticatie en publicatie via de LinkedIn API)</li>
+          <li>Anthropic (voor AI tekstgeneratie; verwerking conform hun DPA)</li>
+          <li>Hostingproviders (voor opslag en beschikbaarheid van de dienst)</li>
+        </ul>
+        <p>Wij verkopen geen persoonsgegevens aan derden.</p>
+      </div>
+      <div class="section">
+        <h2>6. Bewaartermijn</h2>
+        <p>Wij bewaren persoonsgegevens niet langer dan noodzakelijk voor de doeleinden waarvoor zij zijn verzameld. U kunt op elk moment verzoeken om verwijdering van uw gegevens.</p>
+      </div>
+      <div class="section">
+        <h2>7. Beveiliging</h2>
+        <p>Wij nemen passende technische en organisatorische maatregelen om persoonsgegevens te beschermen tegen verlies, onbevoegde toegang en onrechtmatige verwerking. Toegangstokens worden versleuteld opgeslagen.</p>
+      </div>
+      <div class="section">
+        <h2>8. Uw rechten</h2>
+        <p>Op grond van de Algemene Verordening Gegevensbescherming (AVG) heeft u het recht om:</p>
+        <ul>
+          <li>Inzage te vragen in uw persoonsgegevens</li>
+          <li>Rectificatie of verwijdering te verzoeken</li>
+          <li>Bezwaar te maken tegen de verwerking</li>
+          <li>Uw toestemming in te trekken</li>
+          <li>Een klacht in te dienen bij de Autoriteit Persoonsgegevens</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>9. Cookies</h2>
+        <p>Onze website maakt uitsluitend gebruik van functionele cookies die noodzakelijk zijn voor de werking van de dienst. Wij gebruiken geen tracking cookies of cookies van derden voor marketingdoeleinden.</p>
+      </div>
+      <div class="separator"></div>
+      <div class="section">
+        <h2>Contact</h2>
+        <p>Voor vragen over deze privacyverklaring of het uitoefenen van uw rechten kunt u contact opnemen via het contactformulier op onze website of per post: Aeternum B.V., Breda.</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span>&copy; 2026 Aeternum B.V.</span>
+        <a href="/">Home</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
