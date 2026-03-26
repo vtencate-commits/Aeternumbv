@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aeternum B.V.</title>
+  <meta name="description" content="Aeternum B.V. — Technologie en innovatie.">
+  <link rel="canonical" href="https://aeternumbv.nl">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --ink: #0a0a0a;
+      --ink-light: #3a3a3a;
+      --ink-muted: #8a8a8a;
+      --surface: #fafaf8;
+      --surface-warm: #f4f3f0;
+      --accent: #1a1a2e;
+      --rule: #e0ddd8;
+    }
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', -apple-system, sans-serif;
+      background: var(--surface);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+    }
+    .container { max-width: 720px; margin: 0 auto; padding: 0 2rem; width: 100%; }
+    header { padding: 2.5rem 0 2rem; border-bottom: 1px solid var(--rule); }
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.5rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .logo span {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      font-size: 0.875rem;
+      color: var(--ink-muted);
+      margin-left: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    main { flex: 1; display: flex; align-items: center; padding: 6rem 0; }
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2.25rem, 5vw, 3.25rem);
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+      color: var(--ink);
+      margin-bottom: 1.75rem;
+      max-width: 560px;
+    }
+    .hero p {
+      font-size: 1.125rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--ink-light);
+      max-width: 480px;
+      margin-bottom: 0.75rem;
+    }
+    .divider { width: 48px; height: 1px; background: var(--rule); margin: 2.5rem 0; }
+    .contact { font-size: 0.9375rem; color: var(--ink-muted); line-height: 1.8; }
+    .contact a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      transition: border-color 0.2s ease;
+    }
+    .contact a:hover { border-color: var(--ink); }
+    footer { border-top: 1px solid var(--rule); padding: 1.5rem 0; }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .footer-inner span, .footer-inner a {
+      font-size: 0.8125rem;
+      color: var(--ink-muted);
+      text-decoration: none;
+    }
+    .footer-inner a:hover { color: var(--ink); }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero h1 { animation: fadeUp 0.8s ease-out both; }
+    .hero p { animation: fadeUp 0.8s ease-out 0.15s both; }
+    .divider { animation: fadeUp 0.8s ease-out 0.3s both; }
+    .contact { animation: fadeUp 0.8s ease-out 0.4s both; }
+    @media (max-width: 640px) {
+      main { padding: 4rem 0; }
+      .container { padding: 0 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="logo">Aeternum<span>B.V.</span></a>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="hero">
+        <h1>Technologie en innovatie, doordacht gebouwd.</h1>
+        <p>Aeternum B.V. ontwikkelt digitale producten en tools op het snijvlak van technologie, AI en professionele dienstverlening.</p>
+        <div class="divider"></div>
+        <div class="contact">
+          <p>Gevestigd in Breda</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span>&copy; 2026 Aeternum B.V.</span>
+        <a href="/privacy">Privacyverklaring</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
